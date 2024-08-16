@@ -1,0 +1,13 @@
+#auth_container{
+    border: 2,solid;
+    background-color: aqua;
+    color: blueviolet;
+}
+
+#auth_container div.signup{
+    border: 2px,solid;
+}
+
+.signup{
+    background-color: brown;
+}
