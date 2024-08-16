@@ -19,10 +19,6 @@ const firebaseConfig = {
   };
 
 
-
-
-
-  
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
@@ -42,8 +38,6 @@ const firebaseConfig = {
   
   onAuthStateChanged(auth, (user) => {
     if (user) {
-      // User is signed in, see docs for a list of available properties
-      // https://firebase.google.com/docs/reference/js/auth.user
       console.log(user, "loged in");
       const uid = user.uid;
       auth_container.style.display = "none";
@@ -61,10 +55,10 @@ const firebaseConfig = {
   logout_btn.addEventListener("click", () => {
     signOut(auth)
       .then(() => {
-        // Sign-out successful.
+        // Sign out successful.
       })
       .catch((error) => {
-        // An error happened.
+        // error happened.
       });
   });
   
