@@ -52,16 +52,7 @@ const firebaseConfig = {
     }
   });
   
-  logout_btn.addEventListener("click", () => {
-    signOut(auth)
-      .then(() => {
-        // Sign out successful.
-      })
-      .catch((error) => {
-        // error happened.
-      });
-  });
-  
+  // sign up
   const createUser = () => {
     const email = signup_email.value;
     const password = signup_password.value;
@@ -98,3 +89,15 @@ const firebaseConfig = {
   
   signup_btn.addEventListener("click", createUser);
   signin_btn.addEventListener("click", signInUser);
+
+// logout button
+  
+  logout_btn.addEventListener("click", () => {
+    signOut(auth)
+      .then(() => {
+        // Sign out successful.
+      })
+      .catch((error) => {
+        // error happened.
+      });
+  });
