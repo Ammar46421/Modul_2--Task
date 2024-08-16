@@ -74,8 +74,19 @@ a:hover {
 /* items */
 #description{
     color: black;
-    
+    /* margin: 20px,20px; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
 }
+
+#specs{
+    width: 40%;
+}
+
+
+
 
 
 @media(max-width:952px) {
@@ -136,8 +147,18 @@ a:hover {
         left: 0;
     }
 
+    #description{
+        display: block;
+
+    }
+
+    #specs{
+        width: auto;
+    }
+
     #lgimg{
         width: 100%;
+        height: auto;
         margin-left: 0%;
     }
 

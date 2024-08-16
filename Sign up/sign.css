@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 #auth_container{
     border: 2,solid;
     background-color: aqua;
@@ -11,3 +14,4 @@
 .signup{
     background-color: brown;
 }
+
