@@ -42,7 +42,7 @@ const firebaseConfig = {
       const uid = user.uid;
       auth_container.style.display = "none";
       dashboard.style.display = "block";
-      user_info.innerHTML = user.email;
+      user_info.innerHTML = user.email; 
     } else {
       console.log("user not logged in");
       auth_container.style.display = "block";
